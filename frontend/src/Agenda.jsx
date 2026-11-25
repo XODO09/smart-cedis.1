@@ -391,6 +391,7 @@ export default function Agenda({ onRecibir, onVerEmbarque }) {
           </div>
           {error && <p className="error">No se pudo cargar la agenda: {error}</p>}
 
+          <div className="cal-scroll">
           <div className="cal-cab">
             <span />
             {dias.map((d) => (
@@ -428,6 +429,7 @@ export default function Agenda({ onRecibir, onVerEmbarque }) {
                 </div>
               );
             })}
+          </div>
           </div>
           <p className="nota leyenda">
             <span className="tipo-punto t-llegada" /> Llegadas de proveedores &nbsp;

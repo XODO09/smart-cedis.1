@@ -29,6 +29,10 @@ const PESTANAS = [
 
 export default function App() {
   const [pestana, setPestana] = useState(() => location.hash.slice(1) || "dashboard");
+  // En celular el menú se desliza: mantiene a la vista la pestaña activa
+  useEffect(() => {
+    try { document.querySelector("nav button.activa")?.scrollIntoView({ inline: "center", block: "nearest" }); } catch { /* sin soporte */ }
+  }, [pestana]);
   const [version, setVersion] = useState(0);
   const [aviso, setAviso] = useState(null);
   const [ruta, setRuta] = useState(null);

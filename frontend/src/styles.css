@@ -339,3 +339,26 @@ td .acciones-fila { margin-top: 0; }
   .linea { grid-template-columns: 1fr 1fr; }
   .linea-cab { display: none; }
 }
+
+/* Celular: encabezado compacto, menú en una sola fila deslizable y botones fáciles de tocar */
+@media (max-width: 760px) {
+  .cab { position: static; gap: 8px 10px; padding: 8px 12px; }
+  .marca { font-size: 14px; letter-spacing: .1em; }
+  .cab-der { order: 2; margin-left: auto; gap: 6px; flex-wrap: nowrap; }
+  .cab-der button { padding: 6px 10px; font-size: 13px; }
+  .cab-der label { font-size: 0; gap: 0; }
+  .cab-der input { width: 92px; font-size: 13px; padding: 6px 8px; }
+  nav { order: 3; flex: 0 0 100%; flex-wrap: nowrap; overflow-x: auto; gap: 2px; padding-bottom: 4px;
+        scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+  nav::-webkit-scrollbar { display: none; }
+  nav button { white-space: nowrap; padding: 8px 12px; flex: 0 0 auto; }
+  button, .btn, .btn-sec { min-height: 40px; }
+  .cab-der button { min-height: 34px; }
+  .cab-der .btn-sec:nth-child(1), .cab-der .btn-sec:nth-child(2) { display: none; } /* Demo guiada y Excel quedan para la computadora */
+  .terminal { border-radius: 18px; }
+  .toast { left: 12px; right: 12px; bottom: 12px; max-width: none; }
+}
+@media (max-width: 760px) {
+  .cal-scroll { overflow-x: auto; margin: 0 -4px; padding-bottom: 6px; }
+  .cal-scroll .cal-cab, .cal-scroll .cal-cuerpo { min-width: 640px; }
+}

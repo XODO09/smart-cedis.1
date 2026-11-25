@@ -39,7 +39,7 @@ El catálogo de ejemplo es de papelería (cuadernos, papel bond, folders, pintur
 | Incidencias | KPIs de descarga (exactitud, OC con faltantes, tiempos) y detalle de cada rechazo o faltante |
 
 Además, en la barra superior: **Demo guiada** (guion de 11 pasos dentro del sistema), **Excel** (libro completo), y el botón ☀/☾ para tema claro u oscuro.
-Las pantallas tienen vista de impresión (Ctrl/Cmd+P); es una versión limpia de la pantalla, no idéntica a los PDF oficiales.
+En celular el menú se desliza de lado, la agenda se desplaza horizontalmente y los botones son más grandes (la terminal de escaneo está pensada para usarse así). Las pantallas tienen vista de impresión (Ctrl/Cmd+P); es una versión limpia de la pantalla, no idéntica a los PDF oficiales.
 
 **Sugerencias de carga:** en un embarque que no llega al 90 %, "Sugerir camión y carga" compara los camiones y propone qué tarimas agregar (PEPS).
 
