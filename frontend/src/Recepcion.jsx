@@ -15,7 +15,7 @@ export default function Recepcion({ cita = null, soltarCita = () => {} }) {
 
   const [placas, setPlacas] = useState("");
   const [proveedorId, setProveedorId] = useState("");
-  const [tipo, setTipo] = useState("Abarrotes");
+  const [tipo, setTipo] = useState("Papel y cuadernos");
   const [tipoCamion, setTipoCamion] = useState("Torton");
   const [capacidad, setCapacidad] = useState(14);
   const [lineas, setLineas] = useState([nuevaLinea()]);
@@ -43,7 +43,7 @@ export default function Recepcion({ cita = null, soltarCita = () => {} }) {
     if (!productos || !proveedores) return;
     setPlacas("TRX-401-A");
     setProveedorId(String(proveedores[0].id));
-    setTipo("Abarrotes");
+    setTipo("Papel y cuadernos");
     setTipoCamion("Tráiler 53'");
     setCapacidad(26);
     setLineas([

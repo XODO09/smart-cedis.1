@@ -584,10 +584,10 @@ def _inventario_demo():
     """Carga unas recepciones de ejemplo para que el plano y el dashboard no arranquen vacíos."""
     # (placas, proveedor_id, tipo, [(sku, tarimas, cantidad por tarima, peso kg)])
     recepciones = [
-        ("TRX-301-A", 1, "Abarrotes", [("SKU-1001", 6, 48, 640), ("SKU-1002", 6, 60, 700), ("SKU-1003", 4, 60, 700)]),
-        ("TRX-302-B", 2, "Bebidas", [("SKU-2001", 8, 120, 820), ("SKU-2002", 6, 100, 1000)]),
-        ("TRX-303-C", 3, "Limpieza", [("SKU-3001", 5, 80, 450), ("SKU-3002", 6, 60, 300)]),
-        ("TRX-304-D", 1, "Abarrotes", [("SKU-1004", 8, 50, 680), ("SKU-1001", 4, 48, 640)]),
+        ("TRX-301-A", 1, "Papel y cuadernos", [("SKU-1001", 6, 48, 640), ("SKU-1002", 6, 60, 700), ("SKU-1003", 4, 60, 700)]),
+        ("TRX-302-B", 2, "Oficina y folders", [("SKU-2001", 8, 120, 820), ("SKU-2002", 6, 100, 1000)]),
+        ("TRX-303-C", 3, "Arte y mochilas", [("SKU-3001", 5, 80, 450), ("SKU-3002", 6, 60, 300)]),
+        ("TRX-304-D", 1, "Papel y cuadernos", [("SKU-1004", 8, 50, 680), ("SKU-1001", 4, 48, 640)]),
     ]
     for placas, proveedor_id, tipo, lineas in recepciones:
         tarimas = [{"sku": sku, "cantidad": cantidad, "peso_kg": peso}

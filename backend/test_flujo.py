@@ -76,7 +76,7 @@ print("4. Validación: detecta carga que no coincide y camión inexistente")
 
 # 5. Despacho -------------------------------------------------------------------
 x = services.despachar_embarque(e["embarque_id"], "Gamaliel")
-assert x["tarimas_despachadas"] == 2 and x["sucursal"] == "Sucursal Xalapa"
+assert x["tarimas_despachadas"] == 2 and x["sucursal"] == "Tony Xalapa"
 d = services.dashboard()
 assert d["embarques_realizados"] == 1 and d["tarimas_almacenadas"] == 1 and d["capacidad_disponible"] == 767
 assert d["movimientos_pendientes"]["total"] == 0

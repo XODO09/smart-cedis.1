@@ -96,7 +96,7 @@ database.init_db()
 print("1. Sin Google: la agenda funciona")
 assert not gcal.configurado()
 c = agenda.crear_cita(llegada(1, placas="abc-123"))
-assert c["titulo"] == "Llegada · Distribuidora Alimentos del Golfo · ABC-123" and c["google_estado"] is None
+assert c["titulo"] == "Llegada · Papelera del Golfo · ABC-123" and c["google_estado"] is None
 falla("andén 1 ya está ocupado", agenda.crear_cita, llegada(1))
 falla("Andenes libres en ese horario: 2, 3, 4", agenda.crear_cita, llegada(1))
 agenda.crear_cita(llegada(2))  # contiguo: no es choque

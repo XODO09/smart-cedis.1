@@ -479,13 +479,13 @@ def datos_demo(oc_ids=None):
         return _iso(hoy + timedelta(days=n, hours=h, minutes=m))
 
     citas = [
-        ("llegada", dia(0, 8), 60, 1, {"proveedor_id": 1, "placas": "TRX-401-A", "tipo_mercancia": "Abarrotes", **oc(0)}),
-        ("llegada", dia(0, 12), 90, 2, {"proveedor_id": 2, "placas": "TRX-402-B", "tipo_mercancia": "Bebidas", **oc(1)}),
+        ("llegada", dia(0, 8), 60, 1, {"proveedor_id": 1, "placas": "TRX-401-A", "tipo_mercancia": "Papel y cuadernos", **oc(0)}),
+        ("llegada", dia(0, 12), 90, 2, {"proveedor_id": 2, "placas": "TRX-402-B", "tipo_mercancia": "Oficina y folders", **oc(1)}),
         ("entrega", dia(0, 14), 60, 3, {"sucursal_id": 1, "placas": "VER-103-C", "notas": "Entrega de pedido semanal"}),
         ("entrega", dia(1, 9), 60, 1, {"sucursal_id": 5, "placas": "VER-102-B"}),
-        ("llegada", dia(1, 11), 90, 2, {"proveedor_id": 3, "tipo_mercancia": "Limpieza", **oc(2)}),
+        ("llegada", dia(1, 11), 90, 2, {"proveedor_id": 3, "tipo_mercancia": "Arte y mochilas", **oc(2)}),
         ("entrega", dia(2, 8), 120, 3, {"sucursal_id": 3, "placas": "VER-101-A", "notas": "Requiere montacargas"}),
-        ("llegada", dia(2, 10, 30), 60, 1, {"proveedor_id": 1, "tipo_mercancia": "Abarrotes"}),
+        ("llegada", dia(2, 10, 30), 60, 1, {"proveedor_id": 1, "tipo_mercancia": "Papel y cuadernos"}),
         ("entrega", dia(3, 14), 60, 4, {"sucursal_id": 4}),
     ]
     for tipo, inicio, minutos, anden, extra in citas:

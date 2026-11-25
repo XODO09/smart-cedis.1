@@ -21,6 +21,8 @@ así que **no necesitas Node para la demostración**. La documentación de la AP
 Antes de cada demostración, el botón **Reiniciar demo** (arriba a la derecha) deja la base con 53 tarimas de ejemplo
 (equivale a `POST /api/demo/reiniciar`; con `?con_inventario=false` queda vacía).
 
+El catálogo de ejemplo es de papelería (cuadernos, papel bond, folders, pintura, mochilas...) y las sucursales de destino se llaman Tony Xalapa, Tony Veracruz Puerto, etc., para el hackathon de Tony Superpapelerías. Se cambia en `backend/database.py` (`PRODUCTOS`, `SUCURSALES`, `PROVEEDORES`).
+
 ## Pantallas
 
 | Pestaña | Qué muestra |
@@ -87,6 +89,12 @@ Decisiones que tomé donde la regla dejaba lugar a interpretación (todas se cam
 - **Descarga incompleta:** si se cierra con bultos sin escanear, la OC queda *parcial* y se reportan los faltantes.
 - **Horario y duración** aplican también a las entregas a sucursales.
 - Si ya tenías un `cedis.db` de una versión anterior, se actualiza solo al arrancar (se conservan tus datos).
+
+### Qué pasa con los bultos excedentes
+
+- **En la factura:** la OC no deja facturar más piezas de las que pidió (`la factura trae N piezas y la OC solo pidió M`). El excedente se detecta al dar de alta la orden.
+- **En la descarga:** un bulto que no existe en el sistema, que pertenece a otra OC, que ya se escaneó o cuya etiqueta no coincide **no se recibe**: la terminal lo marca en rojo, no entra al inventario y queda en **Incidencias** con su código, motivo, operador y hora.
+- **Después:** el sistema solo registra el rechazo; la devolución física al proveedor la hace el operador. Un flujo de devoluciones es un siguiente paso previsto.
 
 ## Agenda de llegadas y entregas
 

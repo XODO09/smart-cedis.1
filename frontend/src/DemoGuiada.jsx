@@ -22,7 +22,7 @@ const PASOS = [
     hacer: ["Muestra la exactitud de descarga y el rechazo registrado con su motivo."],
     decir: "Cada rechazo queda trazado: qué bulto, por qué y en qué OC." },
   { id: "embarque", titulo: "Embarque con la regla del 90 %", tab: "embarques", min: 4,
-    hacer: ["Crea un embarque a Sucursal Xalapa de SKU-1001, 2 tarimas.", "Elige VER-101-A y valida: el camión no sale (menos del 90 %).", "«Sugerir camión y carga» → «Agregar N y usar» → valida y despacha."],
+    hacer: ["Crea un embarque a Tony Xalapa de SKU-1001, 2 tarimas.", "Elige VER-101-A y valida: el camión no sale (menos del 90 %).", "«Sugerir camión y carga» → «Agregar N y usar» → valida y despacha."],
     decir: "El camión solo sale con al menos 90 % de capacidad; el sistema propone cómo completarlo." },
   { id: "relacion", titulo: "Relación de embarque", tab: "embarques", min: 1,
     hacer: ["Abre «Relación de embarque (PDF)»: bultos agrupados por sucursal, QR del embarque y firmas."],

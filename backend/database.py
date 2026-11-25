@@ -234,28 +234,28 @@ CREATE TABLE IF NOT EXISTS movimientos (
 """
 
 PRODUCTOS = [
-    ("SKU-1001", "Aceite vegetal 1 L", "Caja con 12 piezas"),
-    ("SKU-1002", "Arroz 1 kg", "Caja con 20 piezas"),
-    ("SKU-1003", "Frijol negro 1 kg", "Caja con 20 piezas"),
-    ("SKU-1004", "Azúcar 2 kg", "Caja con 10 piezas"),
-    ("SKU-2001", "Refresco cola 600 ml", "Caja con 24 piezas"),
-    ("SKU-2002", "Agua purificada 1.5 L", "Paquete con 6 piezas"),
-    ("SKU-3001", "Detergente en polvo 1 kg", "Caja con 12 piezas"),
-    ("SKU-3002", "Papel higiénico 12 rollos", "Paquete con 4 bolsas"),
+    ("SKU-1001", "Cuaderno profesional 100 hojas", "Caja con 12 piezas"),
+    ("SKU-1002", "Pegamento blanco 1 L", "Caja con 20 piezas"),
+    ("SKU-1003", "Lápiz del No. 2, caja de 12", "Caja con 20 piezas"),
+    ("SKU-1004", "Papel bond carta 500 hojas", "Caja con 10 piezas"),
+    ("SKU-2001", "Folder manila carta, paquete de 100", "Caja con 24 piezas"),
+    ("SKU-2002", "Cartulina blanca, paquete de 100", "Paquete con 6 piezas"),
+    ("SKU-3001", "Pintura vinílica 1 L", "Caja con 12 piezas"),
+    ("SKU-3002", "Mochila escolar", "Paquete con 4 piezas"),
 ]
 
 SUCURSALES = [
-    ("Sucursal Xalapa", "Xalapa, Ver."),
-    ("Sucursal Veracruz Puerto", "Veracruz, Ver."),
-    ("Sucursal Coatzacoalcos", "Coatzacoalcos, Ver."),
-    ("Sucursal Poza Rica", "Poza Rica, Ver."),
-    ("Sucursal Córdoba", "Córdoba, Ver."),
+    ("Tony Xalapa", "Xalapa, Ver."),
+    ("Tony Veracruz Puerto", "Veracruz, Ver."),
+    ("Tony Coatzacoalcos", "Coatzacoalcos, Ver."),
+    ("Tony Poza Rica", "Poza Rica, Ver."),
+    ("Tony Córdoba", "Córdoba, Ver."),
 ]
 
 PROVEEDORES = [
-    "Distribuidora Alimentos del Golfo",
-    "Bebidas del Sureste",
-    "Limpieza y Hogar MX",
+    "Papelera del Golfo",
+    "Oficina y Útiles del Sureste",
+    "Arte y Mochilas MX",
 ]
 
 # (placas, tipo, capacidad en tarimas, capacidad en kg, capacidad en m³)

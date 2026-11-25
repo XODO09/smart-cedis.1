@@ -77,7 +77,7 @@ export default function App() {
   return (
     <Contexto.Provider value={{ version, refrescar, avisar }}>
       <header className="cab">
-        <div className="marca"><span className="marca-logo">▣</span> SMART <b>CEDIS</b></div>
+        <div className="marca"><img className="marca-logo" src="/static/logo.svg" alt="" width="30" height="30" /> SMART <b>CEDIS</b></div>
         <nav>
           {PESTANAS.map(([id, nombre]) => (
             <button key={id} className={pestana === id ? "activa" : ""} onClick={() => setPestana(id)}>{nombre}</button>

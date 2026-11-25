@@ -35,7 +35,7 @@ textarea { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 12.
 }
 .marca { font-weight: 600; letter-spacing: .12em; font-size: 15px; white-space: nowrap; }
 .marca b { color: var(--acento); }
-.marca-logo { color: var(--acento); margin-right: 4px; }
+.marca-logo { width: 30px; height: 30px; margin-right: 8px; vertical-align: middle; border-radius: 7px; }
 nav { display: flex; gap: 4px; flex: 1; flex-wrap: wrap; }
 nav button { background: none; border: 0; color: var(--suave); padding: 8px 12px; border-radius: 6px; }
 nav button:hover { color: var(--texto); background: var(--panel-2); }
