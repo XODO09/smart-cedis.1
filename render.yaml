@@ -1,0 +1,19 @@
+# Despliegue en Render (Blueprint). Ver "Publicarlo en internet" en el README.
+services:
+  - type: web
+    name: smart-cedis
+    runtime: python
+    plan: free
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/config
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: TZ                      # la agenda usa la hora local
+        value: America/Mexico_City
+      - key: CEDIS_SEMBRAR_DEMO      # si la base está vacía, carga la demo al arrancar
+        value: "1"
+      - key: CEDIS_CLAVE_REINICIO    # clave para el botón "Reiniciar demo" (Render te la pide al crear)
+        sync: false

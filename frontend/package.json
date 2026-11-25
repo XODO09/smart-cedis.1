@@ -1,0 +1,16 @@
+{
+  "name": "smart-cedis-frontend",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "build": "esbuild src/main.jsx --bundle --minify --jsx=automatic --loader:.jsx=jsx --outdir=../backend/static --entry-names=app",
+    "watch": "esbuild src/main.jsx --bundle --sourcemap --jsx=automatic --loader:.jsx=jsx --outdir=../backend/static --entry-names=app --watch"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0"
+  }
+}

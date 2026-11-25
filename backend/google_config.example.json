@@ -1,0 +1,5 @@
+{
+  "calendar_id": "PEGA_AQUI_EL_ID_DEL_CALENDARIO@group.calendar.google.com",
+  "credentials_file": "google-credentials.json",
+  "timezone": "America/Mexico_City"
+}
